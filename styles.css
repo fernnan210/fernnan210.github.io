@@ -1,0 +1,214 @@
+/* Fuente elegante desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;600&display=swap');
+
+
+body {
+  background: url('hh.avif') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Fondo animado */
+body {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.8;
+  background: linear-gradient(270deg, #eff3cb, #f5e8b0, #e0be6f, #ad7f1b, #f5e8b0, #eff3cb);
+  background-size: 1200% 1200%;
+  animation: animateBackground 20s ease infinite;
+  color: #000000;
+  padding: 2rem 0;
+  overflow-x: hidden;
+}
+
+
+@keyframes animateBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.gradient-text {
+  background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1); /* Colores del gradiente */
+  -webkit-background-clip: text; /* Recorta el fondo al texto */
+  -webkit-text-fill-color: transparent; /* Hace el texto transparente para ver el fondo */
+  font-size: 3em;
+  font-weight: bold;
+}
+
+
+/* HEADER */
+header {
+  background: linear-gradient(to right, #020202,#000000);
+  color: #4001ebfd;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-bottom: 6px solid #0091e6;
+  box-shadow: 0 4px 15px rgb(0, 0, 0);
+}
+
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+
+/* MAIN */
+main {
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #6e422d;
+  margin-bottom: 1.5rem;
+  border-left: 6px solid #cfa75c;
+  padding-left: 1rem;
+}
+
+h3 {
+  color: #ff0808;
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+
+/* MENU ITEM CARD */
+.menu-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #fffdf9;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  margin-bottom: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.02);
+}
+
+/* IMAGE */
+.menu-item img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* TEXT */
+.menu-text {
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.menu-text p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.menu-text ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.menu-text ul li {
+  background-color: #f4ebe2;
+  margin-bottom: 0.5rem;
+  padding: 0.7rem;
+  border-left: 5px solid #d9aa5b;
+  border-radius: 4px;
+}
+
+/* BUTTONS */
+button, .btn {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+}
+
+/* PRIMARY */
+.btn-primary {
+  background: linear-gradient(to right, #b77d3b, #cfa75c);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(191, 164, 111, 0.4);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #a96924, #b98c42);
+  box-shadow: 0 6px 18px rgba(191, 164, 111, 0.5);
+  transform: translateY(-2px);
+}
+
+/* SECONDARY */
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #cfa75c;
+  color: #cfa75c;
+}
+
+.btn-secondary:hover {
+  background-color: #cfa75c;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* FOOTER */
+footer {
+  background-color: #472f26;
+  color: #f4e8dc;
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 1rem;
+  margin-top: 5rem;
+  border-top: 6px solid #38280b;
+}
+
+header {
+  background: linear-gradient(to right, #f59f00,#f39810);
+  color: #ffffff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  border-bottom: 6px solid #d6b66a;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative; /* Necesario para posicionar la imagen */
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 15px; /* separación desde arriba */
+  left: 15px; /* separación desde la izquierda */
+  width: 100px; /* tamaño de la imagen */
+  height: auto;
+  background: url('/mnt/data/hhhhh.png') no-repeat center center;
+  background-size: contain;
+}
